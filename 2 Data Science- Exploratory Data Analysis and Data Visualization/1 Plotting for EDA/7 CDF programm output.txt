@@ -1,0 +1,10 @@
+============================== explaining 'bin edges and counts ==============================
+bin edges : [  1.  11.  21.  31.  41.  51.]
+counts per each bin : [5 5 7 2 1]
+============================== explaining 'density=True' parameter ==============================
+manual calculated densities for each bin [ 0.025  0.025  0.035  0.01   0.005]
+bin edges : [  1.  11.  21.  31.  41.  51.]
+counts per each bin using density=True: [ 0.025  0.025  0.035  0.01   0.005]
+============================== explaining counts/sum(counts) ==============================
+bin edges : [  1.  11.  21.  31.  41.  51.]
+counts per each bin using density=True: [ 0.25  0.25  0.35  0.1   0.05]
