@@ -49,3 +49,19 @@
 [0513/100718.299:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0513/102218.301:ERROR:crash_report_database_win.cc(428)] unexpected header
 [0515/204339.009:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/204228.522:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/214244.057:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/215244.057:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/215244.091:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/215744.085:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/221244.086:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/222744.089:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/224244.091:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/225744.103:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/231244.105:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/232744.108:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/234245.741:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0524/235746.003:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0525/001246.006:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0525/002055.461:ERROR:crash_report_database_win.cc(428)] unexpected header
+[0525/002102.915:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: The operation completed successfully. (0x0)
