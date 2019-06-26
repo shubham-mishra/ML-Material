@@ -1,0 +1,54 @@
+'''
+# Reading glove vectors in python: https://stackoverflow.com/a/38230349/4084039
+def loadGloveModel(gloveFile):
+    print ("Loading Glove Model")
+    f = open(gloveFile,'r', encoding="utf8")
+    model = {}
+    for line in tqdm(f):
+        splitLine = line.split()
+        word = splitLine[0]
+        embedding = np.array([float(val) for val in splitLine[1:]])
+        model[word] = embedding
+    print ("Done.",len(model)," words loaded!")
+    return model
+model = loadGloveModel('glove.42B.300d.txt')
+
+# ============================
+Output:
+    
+Loading Glove Model
+1917495it [06:32, 4879.69it/s]
+Done. 1917495  words loaded!
+
+# ============================
+
+words = []
+for i in preproced_texts:
+    words.extend(i.split(' '))
+
+for i in preproced_titles:
+    words.extend(i.split(' '))
+print("all the words in the coupus", len(words))
+words = set(words)
+print("the unique words in the coupus", len(words))
+
+inter_words = set(model.keys()).intersection(words)
+print("The number of words that are present in both glove vectors and our coupus", \
+      len(inter_words),"(",np.round(len(inter_words)/len(words)*100,3),"%)")
+
+words_courpus = {}
+words_glove = set(model.keys())
+for i in words:
+    if i in words_glove:
+        words_courpus[i] = model[i]
+print("word 2 vec length", len(words_courpus))
+
+
+# stronging variables into pickle files python: http://www.jessicayung.com/how-to-use-pickle-to-save-and-load-variables-in-python/
+
+import pickle
+with open('glove_vectors', 'wb') as f:
+    pickle.dump(words_courpus, f)
+
+
+'''
